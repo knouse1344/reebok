@@ -142,6 +142,23 @@
 	margin: 0;
 }
 
+.slide-3 .how-left {
+	width: 30%;
+	display: block;
+	float: left;
+}
+
+.slide-3 .how-left img {
+	width: 100%;
+}
+
+.slide-3 .how-right {
+	width: 69%;
+	display: block;
+	float: left;
+	text-align: left;
+}
+
 .slide-4 .pump-button {
 	display: block;
 	width: 30%;
@@ -155,8 +172,7 @@
 
 .gameboard .contain h1 {
 	color: #fff;
-	font-size: 6em;
-	width: 40%;
+	font-size: 3em;
 	margin: auto;
 }
 
@@ -165,17 +181,16 @@
 }
 
 .gameboard .contain h2 {
-	font-size: 4em;
+	font-size: 2em;
 	color: #fff;
+	font-family: 'Arial', sans-serif;
 	margin-bottom: .5em;
 }
 
 .gameboard .contain h3 {
-	font-family: 'Arial', sans-serif;
-	font-size: 2em;
+	font-size: 1.25em;
 	margin-bottom: 0;
 	margin-top: 0;
-	text-transform: uppercase;
 	font-weight: normal;
 }
 
@@ -328,7 +343,7 @@
 }
 
 #game.pumped .tile {
-	
+
 }
 
 .clear {
