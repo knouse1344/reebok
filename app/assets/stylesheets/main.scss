@@ -162,12 +162,14 @@
 .gameboard .contain h2 {
 	font-size: 4em;
 	color: #fff;
+	margin-bottom: .5em;
 }
 
 .gameboard .contain h3 {
 	font-family: 'Arial', sans-serif;
 	font-size: 2em;
 	margin-bottom: 0;
+	margin-top: 0;
 	text-transform: uppercase;
 	font-weight: normal;
 }
@@ -185,6 +187,29 @@
 	text-transform: uppercase;
 }
 
+.email-grab {
+
+}
+
+.email-grab .email-input {
+	width: 65%;
+	border-radius: 0;
+	font-size: 1em;
+	padding: .5em .75em;
+	text-transform: uppercase;
+}
+
+.email-grab .button {
+	background: transparent;
+	border: 0;
+	border-bottom: 2px solid #fff;
+	color: #fff;
+	font-size: 1em;
+	padding: .5em .75em;
+	margin-left: 1em;
+	text-transform: uppercase;
+	cursor: pointer;
+}
 
 .gameboard .contain .go .playbtn {
 	padding: 1em;

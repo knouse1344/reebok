@@ -1,4 +1,4 @@
-<div id="game" class="variant-one">
+<div id="game" class="">
 	<div class="toprow">
 		<div class="tile reebok"><img src="/assets/grid_twenty.jpg" /></div>
 		<div class="tile pump"><img src="/assets/grid_twenty.jpg" /></div>
@@ -87,7 +87,7 @@
 		$('.go').on("click", function() {
 			$('.slide-1').css("display", "none")
 			$('.slide-2').css("opacity", "1")
-			clearInterval(gridinterval);
+			livegrid()
 		})
 
 		$('.continue').on("click", function(){
@@ -98,7 +98,12 @@
 		$('.play-now').on("click", function() {
 			$('.slide-3').css("display", "none")
 			$('.slide-4').css("opacity", "1")
+			clearInterval(gridinterval);
 		})
+	});
+
+	function livegrid() {
+		$("#game").addClass("variant-one")
 
 		var gridinterval = setInterval(function() {
 			if ($("#game").hasClass("variant-one")) {
@@ -112,8 +117,6 @@
 			} else {
 				$("#game").addClass("variant-one")
 			}
-				
 		}, 1000)
-
-	});
+	}
 </script>
