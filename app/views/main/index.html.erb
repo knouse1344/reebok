@@ -53,8 +53,15 @@
 				</div>
 			</div>
 			<div class="slide-4">
+				<h1>Pump Your Luck</h1>
 				<div class="pump-button"><img src="/assets/pump_button.jpg" /></div>
 			</div>
+
+			<div class="slide-reebok"></div>
+			<div class="slide-shoe"></div>
+			<div class="slide-twenty"></div>
+			<div class="slide-pump"></div>
+			<div class="slide-whammy"></div>
 		</div>
 		<div class="rightcol">
 			<div class="tile reebok"><img src="/assets/grid_twenty.jpg" /></div>
@@ -107,7 +114,7 @@
 				} else {
 					$("#game").addClass("variant-one")
 				}
-			}, 1000)
+			}, 500)
 		})
 
 		$('.continue').on("click", function(){
@@ -127,6 +134,25 @@
 				$(winnertile).fadeIn("fast")
 			})
 			clearInterval(gridinterval)
+
+			setTimeout(function(){
+				if ($(winnertile).hasClass("reebok")) {
+					$('.slide-4').fadeOut("fast")
+					$('.slide-reebok').css("opacity", "1")
+				} else if ($(winnertile).hasClass("pump")) {
+					$('.slide-4').fadeOut("fast")
+					$('.slide-pump').css("opacity", "1")
+				} else if ($(winnertile).hasClass("shoe")) {
+					$('.slide-4').css("display", "none")
+					$('.slide-shoe').css("opacity", "1")
+				} else if ($(winnertile).hasClass("whammy")) {
+					$('.slide-4').css("display", "none")
+					$('.slide-whammy').css("opacity", "1")
+				} else if ($(winnertile).hasClass("twenty")) {
+					$('.slide-4').css("display", "none")
+					$('.slide-twenty').css("opacity", "1")
+				}
+			}, 900)
 		})
 	});
 
