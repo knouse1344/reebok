@@ -1,0 +1,487 @@
+/* line 7, /Users/Bryan/Desktop/projects/reebok/app/assets/stylesheets/main.scss */
+#game {
+  position: absolute;
+  top: 0;
+  left: 6em;
+  right: 6em;
+  bottom: 0;
+  margin: auto;
+}
+/* line 15, /Users/Bryan/Desktop/projects/reebok/app/assets/stylesheets/main.scss */
+#game .board, #game .toprow, #game .bottomrow {
+  width: 100%;
+  position: relative;
+}
+
+/* line 21, /Users/Bryan/Desktop/projects/reebok/app/assets/stylesheets/main.scss */
+.tile {
+  width: 9%;
+  margin: 0 .5% 1% .5%;
+  float: left;
+}
+
+/* line 27, /Users/Bryan/Desktop/projects/reebok/app/assets/stylesheets/main.scss */
+.whammy {
+  background: url("/assets/grid_whammy.jpg");
+  background-size: contain;
+  background-position: center;
+}
+
+/* line 33, /Users/Bryan/Desktop/projects/reebok/app/assets/stylesheets/main.scss */
+.shoe {
+  background: url("/assets/grid_shoe.jpg");
+  background-size: contain;
+  background-position: center;
+}
+
+/* line 39, /Users/Bryan/Desktop/projects/reebok/app/assets/stylesheets/main.scss */
+.pump {
+  background: url("/assets/grid_pump.jpg");
+  background-size: contain;
+  background-position: center;
+}
+
+/* line 45, /Users/Bryan/Desktop/projects/reebok/app/assets/stylesheets/main.scss */
+.twenty {
+  background: url("/assets/grid_twenty.jpg");
+  background-size: contain;
+  background-position: center;
+}
+
+/* line 51, /Users/Bryan/Desktop/projects/reebok/app/assets/stylesheets/main.scss */
+.reebok {
+  background: url("/assets/grid_reebok.jpg");
+  background-size: contain;
+  background-position: center;
+}
+
+/* line 61, /Users/Bryan/Desktop/projects/reebok/app/assets/stylesheets/main.scss */
+.tile img {
+  width: 100%;
+  opacity: 0;
+}
+
+/* line 66, /Users/Bryan/Desktop/projects/reebok/app/assets/stylesheets/main.scss */
+.leftcol {
+  position: relative;
+  width: 10%;
+  display: block;
+  float: left;
+}
+
+/* line 73, /Users/Bryan/Desktop/projects/reebok/app/assets/stylesheets/main.scss */
+.rightcol {
+  position: relative;
+  width: 10%;
+  display: block;
+  float: right;
+}
+
+/* line 80, /Users/Bryan/Desktop/projects/reebok/app/assets/stylesheets/main.scss */
+.leftcol .tile, .rightcol .tile {
+  width: 90%;
+  margin-right: 5%;
+  margin-left: 5%;
+  margin-bottom: 1em;
+  display: block;
+}
+
+/* line 88, /Users/Bryan/Desktop/projects/reebok/app/assets/stylesheets/main.scss */
+.leftcol .tile:last-child, .rightcol .tile:last-child {
+  margin-bottom: 0;
+}
+
+/* line 92, /Users/Bryan/Desktop/projects/reebok/app/assets/stylesheets/main.scss */
+.board {
+  margin-bottom: 1em;
+}
+
+/* line 96, /Users/Bryan/Desktop/projects/reebok/app/assets/stylesheets/main.scss */
+.gameboard {
+  position: absolute;
+  width: 79%;
+  left: 10.5%;
+  height: 100%;
+  float: left;
+  background: #000;
+  padding: 1.5em;
+  box-sizing: border-box;
+}
+
+/* line 107, /Users/Bryan/Desktop/projects/reebok/app/assets/stylesheets/main.scss */
+.gameboard .contain {
+  position: absolute;
+  width: 95%;
+  height: 90%;
+  left: 2.5%;
+  top: 5%;
+  border: 2px solid #fff;
+  text-align: center;
+}
+
+/* line 117, /Users/Bryan/Desktop/projects/reebok/app/assets/stylesheets/main.scss */
+.slide-1, .slide-2, .slide-3, .slide-4, .slide-reebok, .slide-shoe, .slide-twenty, .slide-pump, .slide-whammy {
+  position: relative;
+}
+
+/* line 121, /Users/Bryan/Desktop/projects/reebok/app/assets/stylesheets/main.scss */
+.slide-1 {
+  z-index: 500;
+}
+
+/* line 125, /Users/Bryan/Desktop/projects/reebok/app/assets/stylesheets/main.scss */
+.slide-2 {
+  z-index: 450;
+}
+
+/* line 129, /Users/Bryan/Desktop/projects/reebok/app/assets/stylesheets/main.scss */
+.slide-3 {
+  z-index: 400;
+}
+
+/* line 133, /Users/Bryan/Desktop/projects/reebok/app/assets/stylesheets/main.scss */
+.slide-4 {
+  z-index: 350;
+}
+
+/* line 137, /Users/Bryan/Desktop/projects/reebok/app/assets/stylesheets/main.scss */
+.gameboard .slide-2, .gameboard .slide-3, .gameboard .slide-4, .gameboard .slide-reebok, .gameboard .slide-twenty, .gameboard .slide-shoe, .gameboard .slide-whammy, .gameboard .slide-pump {
+  opacity: 0;
+}
+
+/* line 141, /Users/Bryan/Desktop/projects/reebok/app/assets/stylesheets/main.scss */
+.slide-3 p {
+  margin: 0;
+}
+
+/* line 145, /Users/Bryan/Desktop/projects/reebok/app/assets/stylesheets/main.scss */
+.slide-3 .how-left {
+  width: 30%;
+  display: block;
+  float: left;
+}
+
+/* line 151, /Users/Bryan/Desktop/projects/reebok/app/assets/stylesheets/main.scss */
+.slide-3 .how-left img {
+  width: 100%;
+}
+
+/* line 155, /Users/Bryan/Desktop/projects/reebok/app/assets/stylesheets/main.scss */
+.slide-3 .how-right {
+  width: 69%;
+  display: block;
+  float: left;
+  text-align: left;
+}
+
+/* line 162, /Users/Bryan/Desktop/projects/reebok/app/assets/stylesheets/main.scss */
+.slide-3 .how-right .play-now {
+  background: transparent;
+  text-align: left;
+  border: 0;
+  border-bottom: 2px solid #fff;
+  color: #fff;
+  font-size: 1em;
+  padding: .5em .75em;
+  margin-left: 1em;
+  text-transform: uppercase;
+  cursor: pointer;
+}
+
+/* line 175, /Users/Bryan/Desktop/projects/reebok/app/assets/stylesheets/main.scss */
+.slide-4 .pump-button {
+  display: block;
+  width: 30%;
+  margin: auto;
+  cursor: pointer;
+}
+
+/* line 182, /Users/Bryan/Desktop/projects/reebok/app/assets/stylesheets/main.scss */
+.slide-4 .pump-button img {
+  width: 100%;
+}
+
+/* line 186, /Users/Bryan/Desktop/projects/reebok/app/assets/stylesheets/main.scss */
+.slide-reebok {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: url("/assets/slide_reebok.jpg") no-repeat;
+  background-size: contain;
+  background-position: center;
+}
+
+/* line 197, /Users/Bryan/Desktop/projects/reebok/app/assets/stylesheets/main.scss */
+.slide-shoe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: url("/assets/slide_shoe.jpg") no-repeat;
+  background-size: contain;
+  background-position: center;
+}
+
+/* line 208, /Users/Bryan/Desktop/projects/reebok/app/assets/stylesheets/main.scss */
+.slide-twenty {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: url("/assets/slide_twenty.jpg") no-repeat;
+  background-size: contain;
+  background-position: center;
+}
+
+/* line 219, /Users/Bryan/Desktop/projects/reebok/app/assets/stylesheets/main.scss */
+.slide-pump {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: url("/assets/slide_pump.jpg") no-repeat;
+  background-size: contain;
+  background-position: center;
+}
+
+/* line 230, /Users/Bryan/Desktop/projects/reebok/app/assets/stylesheets/main.scss */
+.slide-whammy {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: #d44;
+}
+
+/* line 239, /Users/Bryan/Desktop/projects/reebok/app/assets/stylesheets/main.scss */
+.gameboard .contain h1 {
+  color: #fff;
+  font-size: 3em;
+  margin: auto;
+}
+
+/* line 245, /Users/Bryan/Desktop/projects/reebok/app/assets/stylesheets/main.scss */
+.gameboard .contain h1, .gameboard .contain h2, .gameboard .contain h3, .gameboard .contain p {
+  color: #fff;
+}
+
+/* line 249, /Users/Bryan/Desktop/projects/reebok/app/assets/stylesheets/main.scss */
+.gameboard .contain h2 {
+  font-size: 2em;
+  color: #fff;
+  font-family: 'Arial', sans-serif;
+  margin-bottom: .5em;
+}
+
+/* line 256, /Users/Bryan/Desktop/projects/reebok/app/assets/stylesheets/main.scss */
+.gameboard .contain h3 {
+  font-size: 1.25em;
+  margin-bottom: 0;
+  margin-top: 0;
+  font-weight: normal;
+}
+
+/* line 263, /Users/Bryan/Desktop/projects/reebok/app/assets/stylesheets/main.scss */
+.gameboard .contain .go {
+  position: absolute;
+  right: 3em;
+  bottom: 3em;
+  cursor: pointer;
+}
+
+/* line 270, /Users/Bryan/Desktop/projects/reebok/app/assets/stylesheets/main.scss */
+.gameboard .contain .go .title {
+  color: #fff;
+  margin: 0;
+  text-transform: uppercase;
+}
+
+/* line 280, /Users/Bryan/Desktop/projects/reebok/app/assets/stylesheets/main.scss */
+.email-grab .email-input {
+  width: 65%;
+  border-radius: 0;
+  font-size: 1em;
+  padding: .5em .75em;
+  text-transform: uppercase;
+}
+
+/* line 288, /Users/Bryan/Desktop/projects/reebok/app/assets/stylesheets/main.scss */
+.email-grab .button {
+  background: transparent;
+  border: 0;
+  border-bottom: 2px solid #fff;
+  color: #fff;
+  font-size: 1em;
+  padding: .5em .75em;
+  margin-left: 1em;
+  text-transform: uppercase;
+  cursor: pointer;
+}
+
+/* line 300, /Users/Bryan/Desktop/projects/reebok/app/assets/stylesheets/main.scss */
+.gameboard .contain .go .playbtn {
+  padding: 1em;
+  margin-top: 1.5em;
+  border: 4px solid #fff;
+  border-radius: 5em;
+  display: block;
+  width: 5em;
+  height: 5em;
+  text-align: center;
+}
+
+/* line 311, /Users/Bryan/Desktop/projects/reebok/app/assets/stylesheets/main.scss */
+.gameboard .contain .go .playbtn .arrow-right {
+  width: 0;
+  height: 0;
+  margin-top: .75em;
+  margin-left: 1.6em;
+  border-top: 25px solid transparent;
+  border-bottom: 25px solid transparent;
+  border-left: 40px solid #fff;
+}
+
+/* line 321, /Users/Bryan/Desktop/projects/reebok/app/assets/stylesheets/main.scss */
+#game.variant-one .whammy {
+  background: url("/assets/grid_shoe.jpg");
+  background-size: contain;
+  background-position: center;
+}
+
+/* line 327, /Users/Bryan/Desktop/projects/reebok/app/assets/stylesheets/main.scss */
+#game.variant-one .shoe {
+  background: url("/assets/grid_pump.jpg");
+  background-size: contain;
+  background-position: center;
+}
+
+/* line 333, /Users/Bryan/Desktop/projects/reebok/app/assets/stylesheets/main.scss */
+#game.variant-one .pump {
+  background: url("/assets/grid_reebok.jpg");
+  background-size: contain;
+  background-position: center;
+}
+
+/* line 339, /Users/Bryan/Desktop/projects/reebok/app/assets/stylesheets/main.scss */
+#game.variant-one .twenty {
+  background: url("/assets/grid_whammy.jpg");
+  background-size: contain;
+  background-position: center;
+}
+
+/* line 345, /Users/Bryan/Desktop/projects/reebok/app/assets/stylesheets/main.scss */
+#game.variant-one .reebok {
+  background: url("/assets/grid_twenty.jpg");
+  background-size: contain;
+  background-position: center;
+}
+
+/* line 351, /Users/Bryan/Desktop/projects/reebok/app/assets/stylesheets/main.scss */
+#game.variant-two .whammy {
+  background: url("/assets/grid_pump.jpg");
+  background-size: contain;
+  background-position: center;
+}
+
+/* line 357, /Users/Bryan/Desktop/projects/reebok/app/assets/stylesheets/main.scss */
+#game.variant-two .shoe {
+  background: url("/assets/grid_whammy.jpg");
+  background-size: contain;
+  background-position: center;
+}
+
+/* line 363, /Users/Bryan/Desktop/projects/reebok/app/assets/stylesheets/main.scss */
+#game.variant-two .pump {
+  background: url("/assets/grid_twenty.jpg");
+  background-size: contain;
+  background-position: center;
+}
+
+/* line 369, /Users/Bryan/Desktop/projects/reebok/app/assets/stylesheets/main.scss */
+#game.variant-two .twenty {
+  background: url("/assets/grid_reebok.jpg");
+  background-size: contain;
+  background-position: center;
+}
+
+/* line 375, /Users/Bryan/Desktop/projects/reebok/app/assets/stylesheets/main.scss */
+#game.variant-two .reebok {
+  background: url("/assets/grid_shoe.jpg");
+  background-size: contain;
+  background-position: center;
+}
+
+/* line 381, /Users/Bryan/Desktop/projects/reebok/app/assets/stylesheets/main.scss */
+#game.variant-three .whammy {
+  background: url("/assets/grid_reebok.jpg");
+  background-size: contain;
+  background-position: center;
+}
+
+/* line 387, /Users/Bryan/Desktop/projects/reebok/app/assets/stylesheets/main.scss */
+#game.variant-three .shoe {
+  background: url("/assets/grid_twenty.jpg");
+  background-size: contain;
+  background-position: center;
+}
+
+/* line 393, /Users/Bryan/Desktop/projects/reebok/app/assets/stylesheets/main.scss */
+#game.variant-three .pump {
+  background: url("/assets/grid_whammy.jpg");
+  background-size: contain;
+  background-position: center;
+}
+
+/* line 399, /Users/Bryan/Desktop/projects/reebok/app/assets/stylesheets/main.scss */
+#game.variant-three .twenty {
+  background: url("/assets/grid_shoe.jpg");
+  background-size: contain;
+  background-position: center;
+}
+
+/* line 405, /Users/Bryan/Desktop/projects/reebok/app/assets/stylesheets/main.scss */
+#game.variant-three .reebok {
+  background: url("/assets/grid_pump.jpg");
+  background-size: contain;
+  background-position: center;
+}
+
+/* line 415, /Users/Bryan/Desktop/projects/reebok/app/assets/stylesheets/main.scss */
+.clear {
+  clear: both;
+}
+/*
+ * This is a manifest file that'll be compiled into application.css, which will include all the files
+ * listed below.
+ *
+ * Any CSS and SCSS file within this directory, lib/assets/stylesheets, vendor/assets/stylesheets,
+ * or any plugin's vendor/assets/stylesheets directory can be referenced here using a relative path.
+ *
+ * You're free to add application-wide styles to this file and they'll appear at the bottom of the
+ * compiled file so the styles you add here take precedence over styles defined in any styles
+ * defined in the other CSS/SCSS files in this directory. It is generally better to create a new
+ * file per style scope.
+ *
+
+
+ */
+/* line 20, /Users/Bryan/Desktop/projects/reebok/app/assets/stylesheets/application.scss */
+html, html body {
+  width: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+/* line 26, /Users/Bryan/Desktop/projects/reebok/app/assets/stylesheets/application.scss */
+html body {
+  position: absolute;
+  top: 0;
+  left: 0;
+  background: #DAB89B;
+}
