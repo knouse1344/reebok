@@ -1,4 +1,4 @@
-<div id="game">
+<div id="game" class="variant-one">
 	<div class="toprow">
 		<div class="tile reebok"><img src="/assets/grid_twenty.jpg" /></div>
 		<div class="tile pump"><img src="/assets/grid_twenty.jpg" /></div>
@@ -20,12 +20,35 @@
 			<div class="tile pump"><img src="/assets/grid_twenty.jpg" /></div>
 		</div>
 		<div class="gameboard">
-			<div class="contain">
+			<div class="contain slide-1">
 				<h1>Pump Your Luck</h1>
 				<div class="go">
 					<h3>Go!</h3>
 					<div class="playbtn"><div class="arrow-right"></div></div>
 				</div>
+			</div>
+			<div class="contain slide-2">
+				<h2>Pump Your Luck</h2>
+				<h3>Register to play</h3>
+				<p>Only one game per user email</p>
+				<div class="email-grab">
+					<input class="email-input" placeholder="email" />
+					<button class="button continue">Continue</button>
+				</div>
+			</div>
+			<div class="contain slide-3">
+				<h2>How To Play</h2>
+				<p>Step 1:</p>
+				<h3>Press the Pump to stop the spin</h3>
+				<p>the tile you land on shows your prize but beware of the whammy which ends your turn</p>
+				<br>
+				<p>Step 2:</p>
+				<h3>Choose to pump your luck or redeem your prize</h3>
+				<p>pump your luck for a chance at a bigger prize.  Max 3 rounds per user</p>
+				<button class="play-now">Play Now</button>
+			</div>
+			<div class="slide-4">
+				<img src="/assets/pump_button.jpg" />
 			</div>
 		</div>
 		<div class="rightcol">
@@ -54,9 +77,43 @@
 
 <script>
 	$(document).ready(function() {
+
+		var gameid = $("#game")
+
 		$('.gameboard').on("click", function() {
 
 		})
+
+		$('.go').on("click", function() {
+			$('.slide-1').css("display", "none")
+			$('.slide-2').css("opacity", "1")
+			clearInterval(gridinterval);
+		})
+
+		$('.continue').on("click", function(){
+			$('.slide-2').css("display", "none")
+			$('.slide-3').css("opacity", "1")
+		})
+
+		$('.play-now').on("click", function() {
+			$('.slide-3').css("display", "none")
+			$('.slide-4').css("opacity", "1")
+		})
+
+		var gridinterval = setInterval(function() {
+			if ($("#game").hasClass("variant-one")) {
+				$("#game").removeClass()
+				$("#game").addClass("variant-two")
+			} else if ($("#game").hasClass("variant-two")) {
+				$("#game").removeClass()
+				$("#game").addClass("variant-three")
+			} else if ($("#game").hasClass("variant-three")) {
+				$("#game").removeClass()
+			} else {
+				$("#game").addClass("variant-one")
+			}
+				
+		}, 1000)
 
 	});
 </script>

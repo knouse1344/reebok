@@ -31,7 +31,6 @@
 }
 
 .shoe {
-
 	background: url('/assets/grid_shoe.jpg');
 	background-size: contain;
 	background-position: center;
@@ -115,20 +114,72 @@
 	text-align: center;
 }
 
+.slide-1, .slide-2, .slide-3, .slide-4 {
+	position: relative;
+}
+
+.slide-1 {
+	z-index: 500;
+}
+
+.slide-2 {
+	z-index: 450;
+}
+
+.slide-3 {
+	z-index: 400;
+}
+
+.slide-4 {
+	z-index: 350;
+}
+
+.gameboard .slide-2, .gameboard .slide-3, .gameboard .slide-4 {
+	opacity: 0;
+}
+
+.slide-3 p {
+	margin: 0;
+}
+
+.slide-4 img {
+	display: block;
+	width: 30%;
+	margin: auto;
+}
+
 .gameboard .contain h1 {
 	color: #fff;
-	font-size: 5em;
-	width: 50%;
+	font-size: 6em;
+	width: 40%;
 	margin: auto;
+}
+
+.gameboard .contain h1, .gameboard .contain h2, .gameboard .contain h3, .gameboard .contain p {
+	color: #fff;
+}
+
+.gameboard .contain h2 {
+	font-size: 4em;
+	color: #fff;
+}
+
+.gameboard .contain h3 {
+	font-family: 'Arial', sans-serif;
+	font-size: 2em;
+	margin-bottom: 0;
+	text-transform: uppercase;
+	font-weight: normal;
 }
 
 .gameboard .contain .go {
 	position: absolute;
 	right: 3em;
 	bottom: 3em;
+	cursor: pointer;
 }
 
-.gameboard .contain .go h3 {
+.gameboard .contain .go .title {
 	color: #fff;
 	margin: 0;
 	text-transform: uppercase;
@@ -156,7 +207,95 @@
 	border-left: 40px solid #fff;
 }
 
+#game.variant-one .whammy {
+	background: url('/assets/grid_shoe.jpg');
+	background-size: contain;
+	background-position: center;
+}
 
+#game.variant-one .shoe {
+	background: url('/assets/grid_pump.jpg');
+	background-size: contain;
+	background-position: center;
+}
+
+#game.variant-one .pump {
+	background: url('/assets/grid_reebok.jpg');
+	background-size: contain;
+	background-position: center;
+}
+
+#game.variant-one .twenty {
+	background: url('/assets/grid_whammy.jpg');
+	background-size: contain;
+	background-position: center;
+}
+
+#game.variant-one .reebok {
+	background: url('/assets/grid_twenty.jpg');
+	background-size: contain;
+	background-position: center;
+}
+
+#game.variant-two .whammy {
+	background: url('/assets/grid_pump.jpg');
+	background-size: contain;
+	background-position: center;
+}
+
+#game.variant-two .shoe {
+	background: url('/assets/grid_whammy.jpg');
+	background-size: contain;
+	background-position: center;
+}
+
+#game.variant-two .pump {
+	background: url('/assets/grid_twenty.jpg');
+	background-size: contain;
+	background-position: center;
+}
+
+#game.variant-two .twenty {
+	background: url('/assets/grid_reebok.jpg');
+	background-size: contain;
+	background-position: center;
+}
+
+#game.variant-two .reebok {
+	background: url('/assets/grid_shoe.jpg');
+	background-size: contain;
+	background-position: center;
+}
+
+#game.variant-three .whammy {
+	background: url('/assets/grid_reebok.jpg');
+	background-size: contain;
+	background-position: center;
+}
+
+#game.variant-three .shoe {
+	background: url('/assets/grid_twenty.jpg');
+	background-size: contain;
+	background-position: center;
+}
+
+#game.variant-three .pump {
+	background: url('/assets/grid_whammy.jpg');
+	background-size: contain;
+	background-position: center;
+}
+
+#game.variant-three .twenty {
+	background: url('/assets/grid_shoe.jpg');
+	background-size: contain;
+	background-position: center;
+}
+
+#game.variant-three .reebok {
+	background: url('/assets/grid_pump.jpg');
+	background-size: contain;
+	background-position: center;
+}
 
 
 
