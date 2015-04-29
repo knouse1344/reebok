@@ -142,10 +142,15 @@
 	margin: 0;
 }
 
-.slide-4 img {
+.slide-4 .pump-button {
 	display: block;
 	width: 30%;
 	margin: auto;
+	cursor: pointer;
+}
+
+.slide-4 .pump-button img {
+	width: 100%;
 }
 
 .gameboard .contain h1 {
@@ -322,7 +327,9 @@
 	background-position: center;
 }
 
-
+#game.pumped .tile {
+	
+}
 
 .clear {
 	clear: both;
