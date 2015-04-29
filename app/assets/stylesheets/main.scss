@@ -1,3 +1,88 @@
 // Place all the styles related to the main controller here.
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
+
+
+
+#game {
+	position: absolute;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	margin: auto;
+	background: #DAB89B;
+
+	.board, .toprow, .bottomrow {
+		width: 100%;
+		position: relative;
+	}
+}
+
+.tile {
+	width: 9%;
+	margin: 0 .5% 1% .5%;
+	float: left;
+	background: url('/assets/grid_whammy.jpg');
+	background-size: contain;
+	background-position: center;
+}
+
+.tile:last-child {
+
+}
+
+.tile img {
+	width: 100%;
+	opacity: 0;
+}
+
+.leftcol {
+	position: relative;
+	width: 10%;
+	display: block;
+	float: left;
+}
+
+.rightcol {
+	position: relative;
+	width: 10%;
+	display: block;
+	float: right;
+}
+
+.leftcol .tile, .rightcol .tile {
+	width: 90%;
+	margin-right: 5%;
+	margin-left: 5%;
+	margin-bottom: 1em;
+	display: block;
+}
+
+.leftcol .tile:last-child, .rightcol .tile:last-child {
+	margin-bottom: 0;
+}
+
+.board {
+	margin-bottom: 1em;
+}
+
+.gameboard {
+	position: absolute;
+	width: 79%;
+	left: 10.5%;
+	height: 100%;
+	float: left;
+	background: #ccc;
+}
+
+
+
+
+
+
+
+
+.clear {
+	clear: both;
+}
