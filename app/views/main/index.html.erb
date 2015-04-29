@@ -145,10 +145,10 @@
 	};
 
 	jQuery.fn.visible = function() {
-		return this.css('outline', '5px solid #fff');
+		return this.css({'outline':'5px solid #fff', 'opacity':'1'});
 	};
 
 	jQuery.fn.invisible = function() {
-		return this.css('outline', '0');
+		return this.css({'outline':'0', 'opacity': '.25'});
 	};
 </script>
